@@ -1,0 +1,19 @@
+# MATLAB
+#Matrices
+x=[1,2,3]
+X=[1;4;7]
+Y=[1,2,3;2,3,4;4,5,6]
+z=1:4:7# increse by step of 4 
+r=100:-10:-100
+
+
+#to acces an elemet in a matrices
+x=[1:4;2:5;3:6]
+ x(2,3)
+ 
+ #to change element
+x(2,3)=97
+x =
+     1     2     3     4
+     2     3    97     5
+     4     5     6     7
