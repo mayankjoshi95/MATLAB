@@ -149,5 +149,12 @@ b=myRand
 b =
     7.2029    1.7544    2.3714    9.9652
     7.7334    3.0608    8.4324    1.7036
-    5.0549    9.2200    5.8451    4.9841
->> 
+  5.0549    9.2200    5.8451    4.9841
+
+
+
+function a=myRand(low,high)
+a=low+rand(3,4)*(high-low)
+
+#command window
+test=myRand(2,5)
