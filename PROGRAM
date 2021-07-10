@@ -158,3 +158,47 @@ a=low+rand(3,4)*(high-low)
 
 #command window
 test=myRand(2,5)
+
+
+
+
+
+
+
+
+
+function [a,s]=myRand(low,high)
+a=low+rand(3,4)*(high-low);
+v=a(:);
+s=sum(v);
+end
+
+#command window
+[x ss]=myRand(2,3)
+x =
+    2.5752    2.3532    2.0430    2.7317
+    2.0598    2.8212    2.1690    2.6477
+    2.2348    2.0154    2.6491    2.4509
+ss =
+   28.7510
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   #sub function
+   #only the first function can be calleed from outside
+   
+   function [a,s]=myRand(low,high)
+a=low+rand(3,4)*(high-low);
+v=a(:);
+s=sumAllElements(a);
+
+function summa = sumAllElements(M)
+v=M(:);
+summa=sum(v);
+
