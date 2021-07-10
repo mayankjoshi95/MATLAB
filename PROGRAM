@@ -111,3 +111,43 @@ ans =
      2     2
      2     2
     
+
+
+
+
+
+
+#functions
+
+
+#in editor type edit in the command window
+
+function myRand
+a=1+rand(3,4)*9
+end
+
+
+
+
+#by typing myRand in the command window
+ myRand
+a =
+    7.1086    4.5300    7.3544    1.4155
+    7.8197    6.8993    1.2865    1.8742
+    7.6882    2.5407    3.4923    8.4111
+    
+    
+    
+    #to use the variabe outside the function we use output
+    
+ function a=myRand
+a=1+rand(3,4)*9;
+end
+
+#command window
+b=myRand
+b =
+    7.2029    1.7544    2.3714    9.9652
+    7.7334    3.0608    8.4324    1.7036
+    5.0549    9.2200    5.8451    4.9841
+>> 
