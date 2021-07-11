@@ -492,3 +492,41 @@ elseif x<42
 else
     fprintf("gueess ")
 end
+
+
+
+#using if else for week
+
+
+
+function day_of_week(n)
+if n==1
+    fprintf("it is sunday");
+    data_type=1;
+elseif n==2
+    fprintf("it is monday");
+    data_type=2;
+elseif n==3
+    fprintf("it is tuesday");
+    data_type=2;
+elseif n==4
+    fprintf("it is wednesday");
+    data_type=2;
+elseif n==5
+    fprintf("it is thursday");
+    data_type=2;
+elseif n==6
+    fprintf("it is friday");
+    data_type=2;
+elseif n==7
+    fprintf("it is saturday");
+    data_type=1;
+else
+    fprintf("no. is not 1 to 7");
+end    
+    if data_type==2
+        fprintf("it is a weeekday\n");
+    else
+        fprintf("it is a weeekend\n");
+    end
+
