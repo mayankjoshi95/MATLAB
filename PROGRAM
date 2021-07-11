@@ -651,3 +651,64 @@ ans =
 ans =
   1×4 logical array
    1   1   1   1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HOW WE MAKE OUR FUNCTION POLYMORPHIC
+#NARGIN :-RETURNS THE NUMBER OF ACTUAL INPUT ARGUMENT THAT THE FUNCTION ARE CALLED WITH
+#NARGOUT :-RETURNS THE NUMBER OF OUTPUT ARGUMENT THAT THE FUNCTION  CALLER REQUESTED
+
+
+
+
+
+
+function [table summa]= mutable(n,m)
+if nargin<2
+    m=n;    
+end
+table=(1:n)' *(1:m);
+ 
+if nargout==2
+    summa=sum(table(:));
+end
+
+
+
+#command window
+
+
+ mutable(3)
+ans =
+     1     2     3
+     2     4     6
+     3     6     9
+
+table =mutable(3,4)
+table =
+     1     2     3     4
+     2     4     6     8
+     3     6     9    12
+
+
+
+
+[table summa]=mutable(3,4)
+table =
+     1     2     3     4
+     2     4     6     8
+     3     6     9    12
+summa =
+    60
