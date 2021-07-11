@@ -464,3 +464,20 @@ title("sine")
  close(2)#close the figure 2
  
 
+
+
+
+
+
+
+#if statement
+
+#editor window
+function rand_int(x)
+if x==2
+    fprintf("the guess is correct");
+end
+
+#command window
+x=2
+
