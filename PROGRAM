@@ -719,3 +719,48 @@ table =
      3     6     9    12
 summa =
     60
+
+
+
+
+
+
+#PERSISTENT VARIABLE
+#IT IS A LOCAL VARIABLE BUT ITS VALUE PERSIST FROM ONE FUNCTION CALL TO ANOTHER
+
+
+
+
+function total=accumulate(n)
+persistent summa;
+if isempty(summa)
+    summa=n;
+else 
+    summa=summa+n;
+    
+end
+total=summa;
+
+
+#command window
+
+ accumulate(3)
+ans =
+     3
+>> accumulate(5)
+ans =
+     8
+ clear accumulate
+accumulate(17)
+ans =
+    17
+ accumulate(7)
+ans =
+    24
+ accumulate(9)
+ans =
+    33
+ clear accumulate
+ accumulate(12)
+ans =
+    12
