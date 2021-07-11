@@ -572,3 +572,82 @@ ans =
    sum([14 5 14 3 25 10]==14)
 ans =
      2
+
+
+
+
+#LOGICAL OPERATOR &&(BINARY),||(BINARY),~(UNARY)(0 FOR FALSE NON ZERO FOR TRUE)
+
+#jto find if the fucntion is increasing or not
+function a=order3(x,y,z)
+if x>=y&& y>=z
+    a=-1;
+elseif x<=y&& y<=z 
+    a=1;
+else
+    a=0;
+end
+
+
+#to see if the function is not the smallest
+function a=not_smallest(x,y,z)
+if x>=y|| x>=z
+    a=1;
+else
+    a=0;
+end
+
+
+ 8&&9
+ans =
+  logical
+   1
+
+
+ logical
+   1
+ 0&&9
+ans =
+  logical
+   0
+ 9&&0
+ans =
+  logical
+   0
+ 1||0
+ans =
+  logical
+   1
+ 0||0
+ans =
+  logical
+   0
+
+
+
+
+
+
+#array version of operand
+
+
+
+
+
+[1 2 3 4] &[0 1 2 0]
+ans =
+  1×4 logical array
+   0   1   1   0
+>> [1 2 3 4] | [0 1 2 0]
+ans =
+  1×4 logical array
+   1   1   1   1
+   
+   
+   
+   
+   
+   [1 2 3 4] | 3
+ans =
+  1×4 logical array
+   1   1   1   1
