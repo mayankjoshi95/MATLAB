@@ -218,3 +218,27 @@ s=sumAllElements(a);
 function summa = sumAllElements(M)
 v=M(:);
 summa=sum(v);
+
+
+
+
+
+
+
+
+
+#script
+#in editor 
+
+y=x+3;
+z=2*y;
+
+ edit example_script
+ x=3
+x =
+     3
+ example_script
+ 
+ 
+ 
+ 
