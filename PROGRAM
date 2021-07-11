@@ -343,7 +343,7 @@ ans =
      3     6     8     6
      
      
-randi(10,5,4)
+randi(10,5,4)  #maximum value is 10 and matrix is 5*4
 ans =
      8     1     6     7
     10     4     2     8
