@@ -523,6 +523,7 @@ elseif n==7
     data_type=1;
 else
     fprintf("no. is not 1 to 7");
+    return # it quits the function and disregard all the statement following it
 end    
     if data_type==2
         fprintf("it is a weeekday\n");
