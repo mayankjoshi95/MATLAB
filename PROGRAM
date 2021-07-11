@@ -407,4 +407,32 @@ print the number
 
 function check_out(n,price)
 total=n*price;
+
+
+#command window
 fprintf('%d items at %.1f  each total =%4.2f',n ,total,price);#%.2f is number of decimal places#4.2 is number of number say here8,.,1,3 4 numbers there can be printed
+
+
+#plot
+
+t=[-10:10]
+plot(a)
+ a=(-10:10).^2
+a =
+  Columns 1 through 16
+   100    81    64    49    36    25    16     9     4     1     0     1     4     9    16    25
+  Columns 17 through 21
+    36    49    64    81   100
+    
+    
+    
+    #plot(x,y)
+    plot(t,a)
+
+
+
+
+
+#plotting
+
+
