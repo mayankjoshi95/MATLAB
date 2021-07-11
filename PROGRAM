@@ -481,3 +481,14 @@ end
 #command window
 x=2
 
+
+
+#if else
+function rand_int(x)
+if x==2
+    fprintf("the guess is correct");
+elseif x<42
+    fprintf("guees is wrong")
+else
+    fprintf("gueess ")
+end
