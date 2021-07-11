@@ -531,3 +531,25 @@ end
         fprintf("it is a weeekend\n");
     end
 
+
+
+
+
+
+
+
+
+
+
+#RELATIONAL OPERATOR
+
+
+#EVERY RELATIONAL OPERATOR RETURN 0 WHEN EXPRESSION IS FALSE ,1 IF TRUE
+ 10==20
+ans =
+  logical
+   0
+ 3==(35-32)
+ans =
+  logical
+   1
