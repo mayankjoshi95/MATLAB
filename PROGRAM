@@ -764,3 +764,72 @@ ans =
  accumulate(12)
 ans =
     12
+
+
+for loop
+
+total =0;
+for n=1:5
+total=total+n
+end
+
+
+function randcheck
+N=5;
+list=rand(1,N);
+for x=list
+    if x>.5
+        fprintf("the number is large",x)
+    else 
+        fprintf("the nuber is small",x)
+    end
+end   
+
+
+
+
+for i=1:length(u)
+w(i)=u(i)-v(i);
+end
+
+
+#while loop
+
+
+function  [n total]=possum(limit)
+total=0;
+n=0;
+while total<=limit
+    n=n+1;
+    total=total+n;
+end
+fprintf("thenumber value%d and total are %d",n,total);
+
+
+#next prime
+
+
+function k=next_prime(n)
+k=n+1;
+while isprime(k)~=1
+    k=k+1 ;
+end     
+
+
+
+logical indexing
+
+
+
+function w=next_prime(v)
+w=v(v>=0);
+
+w=next_prime([7,-1,2,3,-1,-3,4])
+w =
+     7     2     3     4
+     
+     
+     w=[1>2,1==3,2<0]
+w =
+  1×3 logical array
+   0   0   0
