@@ -822,7 +822,7 @@ logical indexing
 
 
 function w=next_prime(v)
-w=v(v>=0);
+w=v(v>=0);#store in w only those logical values wehere the v vector is logical 1 
 
 w=next_prime([7,-1,2,3,-1,-3,4])
 w =
@@ -842,3 +842,16 @@ v =
 keepers =
   1×9 logical array
    1   1   1   0   0   1   1   0   1
+   
+   
+   
+   name=[10==10,2>1,3>3,4<2,5>11,34>21,20<22,9>10]
+name =
+  1×8 logical array
+   1   1   0   0   0   1   1   0
+ v=[1,3,4,2,4,3,5,6]
+v =
+     1     3     4     2     4     3     5     6
+ w=v(name)
+w =
+     1     3     3     5
