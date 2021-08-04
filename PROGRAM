@@ -1012,6 +1012,53 @@ ans =
     19
 
 
+#since size is diffrent we cant just do array operation
+>> tx1='sddssdfs'
+tx1 =
+    'sddssdfs'
+>> tx2='sdsfs'
+tx2 =
+    'sdsfs'
+>> tx1==tx2
+Arrays have incompatible sizes for this operation.
+#logical answer
+tx1='sddssdfs'
+tx1 =
+    'sddssdfs'
+>> tx2='sdsfskkk'
+tx2 =
+    'sdsfskkk'
+>> tx1==tx2
+ans =
+  1×8 logical array
+   1   1   0   0   1   0   0   0
+   
+   
+   
+   
+   tx2='sdsfskkk sfsdfs ssd'
+tx2 =
+    'sdsfskkk sfsdfs ssd'
+>> code=double(tx2)
+code =
+  Columns 1 through 16
+   115   100   115   102   115   107   107   107    32   115   102   115   100   102   115    32
+  Columns 17 through 19
+   115   115   100
+>> tx1=char(code+3)
+tx1 =
+    'vgvivnnn#vivgiv#vvg'
 
-
-
+ tx1=['sdsd';'sdff';'sfjs']
+tx1 =
+  3×4 char array
+    'sdsd'
+    'sdff'
+    'sfjs'
+>> tx1'
+ans =
+  4×3 char array
+    'sss'
+    'ddf'
+    'sfj'
+    'dfs'
