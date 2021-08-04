@@ -1062,3 +1062,41 @@ ans =
     'ddf'
     'sfj'
     'dfs'
+
+
+findstr:-searching for a string inside a string
+num2str:-convert number to/from a string
+str2num;-convert string to number
+strcmp:-compare string
+lower:-convert string to lower case
+upper:-convert string to upper case
+spritnf-:write formatted data to string
+
+
+
+
+#findstr
+
+tx2='sdsfskkk'
+tx2 =
+    'sdsfskkk'
+>> findstr(tx2,'sds')
+ans =
+     1
+>> findstr(tx2,'s')
+ans =
+     1     3     5
+     
+ #    strcmp
+ strcmp(tx2,'s')
+ans =
+  logical
+   0
+>> strcmp(tx2,'sdsfs')
+ans =
+  logical
+   0
+>> strcmp(tx2,'sdsfskkk')
+ans =
+  logical
+   1     
