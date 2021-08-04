@@ -943,3 +943,75 @@ MATLABUSES 8 BYTES OF MEMORY FOR ALL THE DOUBLE
 APART FROM DOUBLE SINGLE IS THE ONLY FLOATING TYPE IN SUPOERTED BY THE MATLAB HAVING 32 BITS
 
 
+INTEGER TYPES 
+SIGNED AND UNSIGNED
+
+8,16,32,64 BIT LONG BOTH SIGNED AND UNSIGNED
+
+
+FOR CHECKING DATA TYPE 
+CLASS RETURN DATA TYPE
+isa(x,'double) it checks whether the data types are same of written in the first argue=ment to second argument
+intmax,intmin maximum minimum for integer type
+realmin,realmax same for floating point type
+conversion function
+
+int8(x),uint32(x),double(x)
+
+
+ARITHMETIC OPERATORS
+
+SAME DATA TYPE NO PROBLEM
+FOR DIFFERNET DATA TYPE WE HAVE MIXED MODE ARITHMETIC
+
+
+
+RELATIONAL OPERATORS
+
+DIFFERNET DATA TYPES ARE ALWAYS ALLOWED
+RESULT ALWAYS OF LOGICAL TYPE
+
+
+##CHARACTER ARRAYS
+
+TEXT IS ANOTHER KIND OF DATA THAT COMPUTER NEED TO MANIPULATE
+
+STRING IS VECTOR OF CHARACTER
+
+IT IS A VECTOR WHOSE ELEMENTARY TYPE IS CHAR
+CHAR IS NUMERICAL DATA TYPE IT USES AN ENCODING SCHEMEE EACH CHARACTER IS REPRESENTED BY A NUMBER ASCII
+ASCII CHARACTER CODE IS 7 BIT LONG SO IT HAS 128 CHARACTERS LIKE LATIN ALPHABET ,DIGITS,PUNCTUATION,SPECIAL CHARACTERS
+NEWER SCHEMES WITH FAR MORE CHARACTERS
+ASCII IS A SUBSET OF THEM
+
+function char_codes
+for ii =33:126
+    fprintf('%s',ii);# %s tells  
+end
+fprintf('%s',10);
+>> char_codes
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+
+%s tell to covert numbere to equivalent char
+
+
+>> MOOC_title='MATLAB for Smarties' 
+MOOC_title =
+    'MATLAB for Smarties'
+>> MOOC_title(1)
+ans =
+    'M'
+>> MOOC_title(1:6)
+ans =
+    'MATLAB'
+>> MOOC_title(end -8:end)
+ans =
+    ' Smarties'
+>> length(MOOC_title)
+ans =
+    19
+
+
+
+
+
