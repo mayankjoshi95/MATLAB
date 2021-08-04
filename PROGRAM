@@ -900,3 +900,39 @@ function numfreeze= freezing(A)
 B=A(A<32);
 [row,col]=size(B);
 numfreeze=col;
+
+
+
+WEEK 7
+DATA TYPES
+
+#A DATA TYPE IS DEFINED BY
+#SET OF VALUES
+#SET OF OPERATION THAT CAN BE PERFORMED ON THOSE VALUES
+
+#IN MATLAB ALL ELEMENT OF A GIVEN ARRAY MUST BE OF SAME TYPE ELEMETARY TYPE
+
+
+ x=23
+x =
+    23
+>> class(x)
+ans =
+    'double'
+>> class(sqrt(-1))
+ans =
+    'double'
+>> rand(3,4)
+ans =
+    0.8147    0.9134    0.2785    0.9649
+    0.9058    0.6324    0.5469    0.1576
+    0.1270    0.0975    0.9575    0.9706
+>> whos
+  Name      Size            Bytes  Class     Attributes
+
+  ans       3x4                96  double              
+  x         1x1                 8  double              
+whos print out the list of existing variable and the current workspace
+
+
+
