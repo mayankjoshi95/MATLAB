@@ -1194,3 +1194,64 @@ account =
   struct with fields:
   number: 122345
      owner: [1×1 struct]
+     
+     
+>> account.owner
+ans = 
+  struct with fields:
+
+     name: 'mayank'
+    email: 'mayank1995joshi@gmail.com'
+    
+    
+account(2).number=1233455
+account = 
+  1×2 struct array with fields:
+    number
+    owner
+>> account.number
+ans =
+      122345
+ans =
+     1233455
+     
+ account(3).number=123443
+account = 
+  1×3 struct array with fields:
+    number
+    owner
+>> account.number
+ans =
+      122345
+ans =
+     1233455
+ans =
+      123443
+      
+      
+      
+  account(1)
+ans = 
+  struct with fields:
+
+    number: 122345
+     owner: [1×1 struct]
+>> account(2)
+ans = 
+  struct with fields:
+
+    number: 1233455
+     owner: []
+     
+account(2).owner.name='sdfdess'
+account = 
+  1×3 struct array with fields:
+    number
+    owner
+>> account(2)
+ans = 
+  struct with fields:
+
+    number: 1233455
+     owner: [1×1 struct]
+>>      
