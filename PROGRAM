@@ -1100,3 +1100,55 @@ ans =
 ans =
   logical
    1     
+   
+   
+   
+   #ignoring case
+   strcmpi(tx2,'Sdsfskkk')
+ans =
+  logical
+   1
+   
+   #here character gets converted to a double
+    digit=3.1453
+digit =
+    3.1453
+>> name='3.1453'
+name =
+    '3.1453'
+>> name+1
+ans =
+    52    47    50    53    54    52
+    
+    
+    #str2num
+     str2num(name)
+ans =
+    3.1453
+    
+    
+    
+    fprintf('%.2f %.2f',r,pi*r^2)
+12.00 452.39
+>> sprintf('%.2f %.2f',r,pi*r^2)
+ans =
+    '12.00 452.39'
+>> str=sprintf('%.2f %.2f',r,pi*r^2);
+>> str
+str =
+    '12.00 452.39'
+    #sprintf puts result in the output argument type of it is char
+
+
+function coded =caesar(s,n)
+ coded=char(mod((double(s)+n-32),95)+32);
+end
+
+ceaser cipher ascii
+
+
+
+
+#STRUCTURE
+
+
