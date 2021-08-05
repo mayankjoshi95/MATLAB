@@ -1172,3 +1172,25 @@ orderfields :changes the order of the field in astruct
 rmfield:rmoves from a struct a field whose name is specified by a string
 setfield:-assign a value to the field whose name is specified by the string
 struct:screate a struct with fields whose name are specified by strings
+
+
+
+##information about the bank account
+
+
+>> account.number=122345
+account = 
+  struct with fields:
+
+    number: 122345
+>> account.owner.name='mayank'
+account = 
+  struct with fields:
+
+    number: 122345
+     owner: [1×1 struct]
+>> account.owner.email='mayank1995joshi@gmail.com'
+account = 
+  struct with fields:
+  number: 122345
+     owner: [1×1 struct]
