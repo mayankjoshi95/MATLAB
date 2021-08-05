@@ -1150,5 +1150,25 @@ ceaser cipher ascii
 
 
 #STRUCTURE
+STRUCTURE IS DIFFERENT FROM ARRAY IT CONTAIN DIFFERENT DAATA TYTPE
+r.ssn=123456
+matlab willl create one variable named r make it a struct create a field called ssn for that struct and assign it a value 123456
+syntax is to put a dot between variable name and name of the field
+
+r.name #by this we create new field to that struct namei.e matlab will modify our struct by having a new field called name.
+
+r.addresss.street='35 dutta enclave'
+here address is  a fieeld which act as a struct 
+a field of struct can contain another struct
+sttruct can hold arrays and arrays can hold structi.e a field of struct b=can be an array also an element of array can be a struct
 
 
+#BUILT IN FUNCTION THAT DEAL WITH STRUCTURE
+
+getfield:-returns the value of the field whose name is specified by a string
+isfield:-true if a struct has a fieldwhose name is specified by string
+isstruct:-returns true if argument type is struuct
+orderfields :changes the order of the field in astruct
+rmfield:rmoves from a struct a field whose name is specified by a string
+setfield:-assign a value to the field whose name is specified by the string
+struct:screate a struct with fields whose name are specified by strings
