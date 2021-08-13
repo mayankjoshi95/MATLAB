@@ -1255,3 +1255,34 @@ ans =
     number: 1233455
      owner: [1×1 struct]
 >>      
+
+
+aa.ss="sdf"
+aa = 
+  struct with fields:
+
+    ss: "sdf"
+>> isfield(aa,'ss')
+ans =
+  logical
+   1
+   
+   
+   
+    rmfield(aa,'ss')
+ans = 
+  struct with no fields.
+>> aa
+aa = 
+  struct with fields:
+
+    ss: "sdf"
+>> aa=rmfield(aa,'ss')
+aa = 
+  struct with no fields.
+  
+  aa
+aa = 
+  struct with no fields.
+  
+  
