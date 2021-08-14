@@ -1416,9 +1416,29 @@ p =
  1.matlab allocates memory location to store the vector from sum
  2.then the addres of that location is copied in that element 1,3 of p. and then that ellement the n points to the memory location
  
- 
+ c{1}=10
+ it tells that first element of c points to a scalar  3.1416 which is just a 1by 1 array and to remind us that first element is a pointer instead of 1*1 array
+ it puts that 1 by 1 array inside of bracket and to remind us second ellemneet is the pointer it puts string inside the quote
     
+#now instead of asssigning the values lets just loojk the values inside this cell by using
+c{1}
+c{2}=sfsfsfsd
 
+if we use regular parenthesiis we get something different
+c(1)
+c(2)='sfsfsfsd'
+#so whne you see no quotes you are looking at a string
+when you see no quotes you are not .
+
+
+
+c1{1,1}='strawberries'
+c1 =
+  1×2 cell array
+    {'strawberries'}    {[10 20]}
+>> c2{1,1}
+ans =
+     1     2
 
 #cell create an array of type cell
 #celldisp:-show all the object pointed by cell array
