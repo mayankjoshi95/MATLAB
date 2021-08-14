@@ -1388,7 +1388,9 @@ ans =
     
     
     p=cell(2,3)
-    it leads to six empty aray each element is said to point to an empty array
+    it leads to six empty aray where  each element contains the address of empty array
+    each element is said to point to the empty array as indicated by the arrows
+    
     
     
      p=cell(2,3)
@@ -1397,13 +1399,24 @@ p =
     {0×0 double}    {0×0 double}    {0×0 double}
     {0×0 double}    {0×0 double}    {0×0 double}
     
-  p{2,1}=pi
+  p{2,1}=pi#basically address of the obect at the right is copied to the element 2,1 not the object itself.
+  ##here instead of paranethesis we use braces for indexing the array element indiacates that the address of the object in right is asssigned to that elemetn instead
+  of object itself.in this case pi prodeuces that object scalar which was theen stored by matlab in a newly aalocated memory location the address of that location is asssigned to that
+  memory location 2,1 of the cell array p that element 2,1 now points at pi.its important to note that even though p refers to hetrogenous data namely array or scalar array p is 
+  still homogenous.
 p =
   2×3 cell array
     {0×0 double}    {0×0 double}    {0×0 double}
     {[  3.1416]}    {0×0 double}    {0×0 double}  
     
-    
+ p{1,3}==sum(p{2,3}); here at right braces object pointed at by the element is to be retrived and not the address thus here p{2,3} retreive the 3*2 array pointed at by the element
+ 2*3 . 
+ then sum does what it does it sum each of the array in the column and returns the sum
+ from this point every thing is same 
+ 1.matlab allocates memory location to store the vector from sum
+ 2.then the addres of that location is copied in that element 1,3 of p. and then that ellement the n points to the memory location
+ 
+ 
     
 
 
@@ -1415,4 +1428,7 @@ p =
 #deal:-copy a value into output argument 
 #iscell:-return true if arument if of type cell
 #num2cell:-convert a numeric array into the cell arrray
+
+
+
 
